@@ -2,10 +2,9 @@ print("********************************")
 print("Bem vindo ao jogo de adivinhação!")
 print("********************************")
 numero_secreto = 13
-rodada= 1
 total_de_rodadas= 3
 
-while (rodada <= total_de_rodadas):
+for rodada in range (1,total_de_rodadas + 1):
     print("Número de tentativas", rodada, "de", total_de_rodadas)
     chute = int(input("Entre com um número: "))
     print("Você digitou o número:", chute)
