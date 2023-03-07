@@ -1,9 +1,11 @@
+import random
 print("********************************")
 print("Bem vindo ao jogo de adivinhação!")
 print("********************************")
-numero_secreto = 13
-total_de_rodadas= 3
-rodada= 1
+numero_secreto = random.randrange(1,20)
+total_de_rodadas = 3
+rodada = 1
+print(numero_secreto)
 while (rodada <= total_de_rodadas):
     print("Número de tentativas {} de {}".format(rodada, total_de_rodadas))
     chute = int(input("Entre com um número de 1 a 20: "))
