@@ -7,8 +7,13 @@ def play():
     print("Bem vindo ao jogo de adivinhação!")
     print("********************************")
     print("Adivinhe a palavra secreta!")
-
-    palavra_secreta = "uva".casefold()
+    arquivo = open('Palavras.txt', "r")
+    palavras = []
+    for linha in arquivo:
+        linha = linha.strip()
+        palavras.append(linha)
+    arquivo.close()
+    palavra_secreta = random.choice(palavras)
     tamanho_palavra = ["_" for letra in palavra_secreta]
 
     tentativas = 6
@@ -16,7 +21,7 @@ def play():
     enforcou = False
     acertou = False
 
-    print((tamanho_palavra))
+    print(" ".join(tamanho_palavra))
     while (not enforcou and not acertou):
         chute = input("Chute uma letra:")
         chute = chute.strip().casefold()
@@ -33,7 +38,7 @@ def play():
             print("Você errou! Restam apenas {} tentativas" .format(tentativas))
             erro += 1
 
-        print(tamanho_palavra)
+        print(" ".join(tamanho_palavra))
         enforcou = erro == 6
         acertou = "_" not in tamanho_palavra
     if (acertou):
