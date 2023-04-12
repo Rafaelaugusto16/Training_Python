@@ -1,7 +1,7 @@
 maça
 banana
 uva
-pessego
+pêssego
 morango
 laranja
 jabuticaba
@@ -15,3 +15,4 @@ pitanga
 romã
 tangerina
 limão
+kiwi
