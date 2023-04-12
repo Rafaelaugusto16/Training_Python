@@ -8,3 +8,10 @@ jabuticaba
 melancia
 abacate
 manga
+goiaba
+mamão
+mexerica
+pitanga
+romã
+tangerina
+limão
