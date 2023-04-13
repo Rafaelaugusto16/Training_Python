@@ -12,7 +12,6 @@ def play():
     enforcou = False
     acertou = False
 
-
     while (not enforcou and not acertou):
         chute = chute_do_jogador()
         if (chute in palavra_secreta):
